@@ -31,5 +31,8 @@ app.use(apiLimit);
 app.use("/api/v1/blogs", blogRouter);
 app.use("/api/v1/user", userRouter);
 
+app.get('/hello-world',(req,res)=>{
+    res.send("<b>Hello World</b>")
+})
 // Exporting app
 module.exports = app;
